@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Gold(models.Model):
-	karat=models.IntegerField(max_length=2,unique=True)
+	karat=models.IntegerField(unique=True)
 	price_per_gram=models.IntegerField()
 	def __str__(self):
 		return self.name
